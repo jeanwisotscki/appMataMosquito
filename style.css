@@ -1,3 +1,12 @@
+/*
+    Formatações gerais
+*/
+body {
+  background-image: url(imagens/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 /* 
     Tamanho do mosquitos
 */
@@ -12,4 +21,36 @@
 .mosquito3 {
   width: 90px;
   height: 90px;
+}
+
+/*
+    Lados do mosquito
+*/
+.ladoA {
+  transform: scaleX(1);
+}
+.ladoB {
+  transform: scalex(-1);
+}
+
+/*
+    Formatações menus
+*/
+.painel {
+  position: absolute;
+  width: 190px;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #fff;
+  background-color: #fff;
+  opacity: 0.7;
+}
+.vidas {
+  float: left;
+}
+.cronometro {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
 }
