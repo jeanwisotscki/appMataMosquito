@@ -17,6 +17,7 @@ var cronometro = setInterval(function(){
         //vitória
         clearInterval(cronometro)
         clearInterval(criaMosquito)
+        window.location.href = 'vitoria.html'
     } else{
         document.getElementById('cronometro').innerHTML = tempo
     }
@@ -29,8 +30,9 @@ function posicaoRandomica() {
         document.getElementById('mosquito').remove()
 
         //vidas
-        if(vidas > 3){
+        if(vidas >= 3){
             //game over
+            window.location.href = 'game-over.html'
         } else{
             document.getElementById('v' + vidas).src = 'imagens/coracao_vazio.png'
             vidas++
