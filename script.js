@@ -29,7 +29,7 @@ function posicaoRandomica() {
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
 
-        //vidas
+        //controle das vidas
         if(vidas >= 3){
             //game over
             window.location.href = 'game-over.html'
