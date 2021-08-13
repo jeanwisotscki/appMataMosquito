@@ -8,6 +8,17 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function iniciarJogo(){
+            var nivel = document.getElementById('nivel').value
+
+            if(nivel === ''){
+                alert('Escolha uma dificuldade para começar o jogo!')
+                return false
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -19,11 +30,28 @@
                 </div>
             </div>
         </div>
-        
+
+        <!-- Selecionar dificuldade do jogo -->
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-danger btn-lg">Iniciar Jogo</button>
+                    <div class="mb-2">
+                        <select class="form-control" id="nivel">
+                            <option value="">Selecionar a dificuldade</option>
+                            <option value="facil">Fácil</option>
+                            <option value="normal">Normal</option>
+                            <option value="dificil">Difícil</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- btn de iniciar o jogo -->
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
                 </div>
             </div>
         </div>
