@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game - Mata Larápio</title>
+    <title>Mata Larápio</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
-<body onresize="ajustaTamanhoPalcoJogo()">
-
-    <div class="painel">
-        
-        <div class="vidas">
-            <img id="v1" src="imagens/coracao_cheio.png" alt="">
-            <img id="v2" src="imagens/coracao_cheio.png" alt="">
-            <img id="v3" src="imagens/coracao_cheio.png" alt="">
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <img src="imagens/mata-larapio-bg.png" alt="">
+                </div>
+            </div>
         </div>
-
-        <div class="cronometro">
-            Tempo restante: <span id="cronometro"></span>
+        
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger btn-lg">Iniciar Jogo</button>
+                </div>
+            </div>
         </div>
     </div>
     
-    <script>
-        document.getElementById('cronometro').innerHTML = tempo
-
-        var criaMosquito = setInterval(function(){
-            posicaoRandomica()
-        }, 1000)
-    </script>
 </body>
 </html>
